@@ -1,15 +1,19 @@
 import React, { useState } from "react";
 
 const App = () => {
+  // hook function in react
+  let Time = new Date().toLocaleTimeString();
 
-    // hook function in react
+  const [newTime, setTime] = useState(Time);
+  const updateTime = () => {
+    setTime({ Time });
+  };
 
-const [count, setCount] = useState(1);
-const IncNum = () => {
-    setCount(count+1);};
-return(
-<>
-<h1>{count}</h1>
-<button onClick={IncNum}>click me</button>
-</>)};
+  return (
+    <>
+      <h1>{Time}</h1>
+      <button onClick={updateTime}>click me</button>
+    </>
+  );
+};
 export default App;
