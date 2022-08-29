@@ -3,11 +3,10 @@ import React, { useState } from "react";
 const App = () => {
 
     // hook function in react
-    
+
 const [count, setCount] = useState(1);
 const IncNum = () => {
-    setCount(count+1);
-};
+    setCount(count+1);};
 return(
 <>
 <h1>{count}</h1>
