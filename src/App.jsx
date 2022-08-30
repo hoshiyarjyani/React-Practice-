@@ -1,3 +1,5 @@
+// Digital watch in react hook concept....
+
 import React, { useState } from "react";
 
 const App = () => {
@@ -8,11 +10,10 @@ const App = () => {
   const updateTime = () => {
     setTime({ Time });
   };
-
+ setInterval(updateTime,1000);
   return (
     <>
       <h1>{Time}</h1>
-      <button onClick={updateTime}>click me</button>
     </>
   );
 };
