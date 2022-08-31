@@ -10,7 +10,7 @@ const App = () => {
   const updateTime = () => {
     setTime({ Time });
   };
- setInterval(updateTime,100);
+ setInterval(updateTime,1000);
   return (
     <>
       <h1>{Time}</h1>
