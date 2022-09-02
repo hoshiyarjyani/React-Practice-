@@ -8,7 +8,7 @@ const App = () => {
 
   const [newTime, setTime] = useState(Time);
   const updateTime = () => {
-    setTime({ Time });
+    setTime({Time});
   };
  setInterval(updateTime,1000);
   return (
