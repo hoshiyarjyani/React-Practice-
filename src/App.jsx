@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 
-const App =  ()  => {
+const App =  () => {
   // hook function in react
   let Time = new Date().toLocaleTimeString();
 
